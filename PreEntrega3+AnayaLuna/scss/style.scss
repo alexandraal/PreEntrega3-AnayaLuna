@@ -1,0 +1,73 @@
+/*BOOTSTRAP*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+
+/*IMPORT*/
+@import "styleservicios";
+@import "stylecontacto";
+
+/*VARS*/
+$color1: rgb(0, 122, 255);
+
+/*STYLE*/
+
+/*NAV BAR*/
+.navbar {
+    --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%container-flex-properties {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+> .container,
+> .container-fluid,
+> .indexonboarding_img
+> .footer {
+    @extend %container-flex-properties;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
+    @extend %container-flex-properties;
+    }
+}
+
+/*FOOTER*/
+footer{
+    background-image: linear-gradient($color1)(rgb(0, 0, 0));
+    padding: 100px;
+    div{
+        margin: 20px;
+        p{
+            text-align: center;
+            color: white;
+        }
+        img{
+            width: 30px;
+            margin: 5px;
+        }
+    }
+}
+
+/*RESPOSIVE*/
+$container-max-widths: (
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1140px,
+xxl: 1320px
+);
+

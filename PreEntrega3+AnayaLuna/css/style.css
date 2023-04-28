@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+h1, h2, h3{
+  text-align: center;
+  margin: 30px;
+}
+
+/*HEADER*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+
+/*MAIN*/
+main{
+  margin-top: 150px;
+}
+
+.d-flex{
+  margin: 50px;
+}
+
+.indexslogan{
+  margin: 0 0 150px 0;
+}
+
+.title{
+  margin: 150px 0 20px 0;
+}
+
+.subtitle{
+  margin: 0 0 40px 0;
+}
+
+.heading {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.indexonboarding_img{
+  width: 70%;
+  margin-bottom: 50px;
+  transform: translateY(50px);
+  transition: 3s;
+}
+
+.indexonboarding h2{
+  text-transform: uppercase;
+}
+
+.indexonboarding__title{
+  text-align: center;
+}
+
+.indexonboarding__description{
+  color: darkgrey;
+  font-size: 14px;
+  margin: 0 200px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.indexprocess{
+  text-align: center;
+  margin: 0 0 200px 0;
+  display: flex;
+}
+
+.indexprocess__card{
+  margin: 0 0 0 100px;
+}
+
+.indexprocess__img{
+  justify-content: center;
+}
+
+.indexprocess__title{
+  text-align: center;
+  margin: 20px;
+}
+
+.indexprocess__description{
+  color: darkgrey;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
